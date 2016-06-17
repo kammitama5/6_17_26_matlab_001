@@ -1,0 +1,39 @@
+account(1:2).owner
+ans = 
+     name: 'Joe Smith'
+    email: 'joe@matlabmooc.com'
+      age: 23
+ans = 
+    name: 'Jane Farmer'
+     age: 50
+isfield(account(2).owner,'age')
+ans =
+     1
+isfield(account(1).owner,'age')
+ans =
+     1
+rmfield(account(1).owner,'age')
+ans = 
+     name: 'Joe Smith'
+    email: 'joe@matlabmooc.com'
+account(1).owner
+ans = 
+     name: 'Joe Smith'
+    email: 'joe@matlabmooc.com'
+      age: 23
+account(1).owner = rmfield(account(1).owner,'age')
+account = 
+1x2 <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> array with fields:
+    number
+    balance
+    owner
+account(1).owner
+ans = 
+     name: 'Joe Smith'
+    email: 'joe@matlabmooc.com'
+course = struct('Area','CS','number',103,'title','Introductory Programming for Engineers and Scientists')
+course = 
+      Area: 'CS'
+    number: 103
+     title: 'Introductory Programming for Engineers and Scientists'
+diary off
